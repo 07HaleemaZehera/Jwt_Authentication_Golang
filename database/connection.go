@@ -9,7 +9,7 @@ import (
 
 var DB *gorm.DB
 
-func connectDB() (*gorm.DB, error) {
+func ConnectDB() (*gorm.DB, error) {
 dsn := "root:Newpassword2025@tcp(localhost:3306)/auth?charset=utf8mb4&parseTime=True&loc=Local"
 
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})

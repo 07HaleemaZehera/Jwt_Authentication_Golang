@@ -1,7 +1,7 @@
-// package controllers
+package controllers
 
-// import "github.com/gofiber/fiber"
+import "github.com/gofiber/fiber/v2"
 
-// func Hello(c *fiber.Ctx) error {
-// 	return c.SendString("hello wo4ld")
-// }
+func Hello(c *fiber.Ctx) error {
+	return c.SendString("hello world")
+}
